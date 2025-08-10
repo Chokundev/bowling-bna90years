@@ -10,6 +10,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import Maps from '~/components/widgets/Map.astro';
 
 const metadata = {
   title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
@@ -33,55 +34,37 @@ const metadata = {
     ]}
     image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
   >
-    <Fragment slot='title'>
-      การแข่งขันโบว์ลิ่งสามัคคี<span class='xl:inline'> ครบรอบ </span>90 ปี<br>
-      <span class='text-accent dark:text-white highlight'> สมาคมศิษย์เก่าบวรนิเวศ</span>
+    <Fragment slot="title">
+      การแข่งขันโบว์ลิ่งสามัคคี<span class="xl:inline"> ครบรอบ </span>90 ปี<br />
+      <span class="text-accent dark:text-white highlight"> สมาคมศิษย์เก่าบวรนิเวศ</span>
     </Fragment>
-
-    <!-- <Fragment slot='subtitle'>
-      <span class='hidden sm:inline'>
-        <span class='font-semibold'>AstroWind</span> เป็นเทมเพลตฟรีที่ปรับแต่งได้และพร้อมใช้งานสำหรับ Astro 4.0 + Tailwind
-        CSS
-      </span>
-      <span class='block mb-1 sm:hidden font-bold text-blue-600'>AstroWind: พร้อมใช้ในเว็บจริง</span>
-      เหมาะสำหรับสตาร์ทอัป ธุรกิจขนาดเล็ก เว็บไซต์บริการ SaaS พอร์ตโฟลิโอของมืออาชีพ เว็บไซต์ด้านการตลาด เว็บหน้าเดียว และบล็อก
-    </Fragment> -->
   </Hero>
-
-  <!-- Note Widget ******************* -->
-
-  
 
   <!-- Features Widget *************** -->
 
   <Features
-    id='features'
-    title='เกี่ยวกับการแข่งขัน'
-    subtitle='ร่วมเป็นส่วนหนึ่งของ “โบว์ลิ่งสามัคคี ครบรอบ 90 ปี สมาคมศิษย์เก่าบวรนิเวศ” เพื่อสานสัมพันธ์และสร้างประโยชน์กลับคืนสู่รั้วบวร'
+    id="features"
+    title="เกี่ยวกับการแข่งขัน"
+    subtitle="ร่วมเป็นส่วนหนึ่งของ “โบว์ลิ่งสามัคคี ครบรอบ 90 ปี สมาคมศิษย์เก่าบวรนิเวศ” เพื่อสานสัมพันธ์และสร้างประโยชน์กลับคืนสู่รั้วบวร"
     items={[
-     
       {
         title: 'ระดมทุน',
-        description:
-          'ระดมรายได้หลังหักค่าใช้จ่ายเพื่อสนับสนุนกิจกรรมของสมาคมศิษย์เก่าและโรงเรียนวัดบวรนิเวศ',
+        description: 'ระดมรายได้หลังหักค่าใช้จ่ายเพื่อสนับสนุนกิจกรรมของสมาคมศิษย์เก่าและโรงเรียนวัดบวรนิเวศ',
         icon: 'tabler:list-check',
       },
       {
         title: 'สร้างความสัมพันธ์',
-        description:
-          'สร้างความสัมพันธ์อันดีระหว่างศิษย์เก่าและภาคส่วนที่เกี่ยวข้อง',
+        description: 'สร้างความสัมพันธ์อันดีระหว่างศิษย์เก่าและภาคส่วนที่เกี่ยวข้อง',
         icon: 'tabler:rocket',
       },
       {
         title: 'สนับสนุนโรงเรียน',
-        description:
-          "สนับสนุนการพัฒนาการศึกษาของโรงเรียนวัดบวรนิเวศ",
+        description: 'สนับสนุนการพัฒนาการศึกษาของโรงเรียนวัดบวรนิเวศ',
         icon: 'tabler:arrows-right-left',
       },
       {
         title: 'ส่งเสริมการออกกำลังกาย',
-        description:
-          'ส่งเสริมการออกกำลังกายและการใช้เวลาร่วมกันอย่างสร้างสรรค์',
+        description: 'ส่งเสริมการออกกำลังกายและการใช้เวลาร่วมกันอย่างสร้างสรรค์',
         icon: 'tabler:bulb',
       },
     ]}
@@ -97,20 +80,16 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot='title'>
-     ลงทะเบียนเข้าร่วมแข่งขัน
-    </Fragment>
+    <Fragment slot="title"> ลงทะเบียนเข้าร่วมแข่งขัน </Fragment>
 
-    <Fragment slot='subtitle'>
-      🎳 พร้อมร่วมสนุกและสร้างความทรงจำดี ๆ ไปด้วยกัน กดลงทะเบียนตอนนี้เลย!
-    </Fragment>
+    <Fragment slot="subtitle"> 🎳 พร้อมร่วมสนุกและสร้างความทรงจำดี ๆ ไปด้วยกัน กดลงทะเบียนตอนนี้เลย! </Fragment>
   </CallToAction>
 
   <!-- Content Widget **************** -->
 
   <Content
     isReversed
-    tagline='Inside template'
+    tagline="Inside template"
     title="AstroWind's Blueprint: Fun Meets Functionality!"
     items={[
       {
@@ -134,13 +113,13 @@ const metadata = {
       alt: 'Colorful Image',
     }}
   >
-    <Fragment slot='content'>
-      <h3 class='text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2'>Building on modern foundations</h3>
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
       Gain a competitive advantage by incorporating industry leading practices
     </Fragment>
 
-    <Fragment slot='bg'>
-      <div class='absolute inset-0 bg-blue-50 dark:bg-transparent'></div>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -174,10 +153,10 @@ const metadata = {
       alt: 'Blueprint Image',
     }}
   >
-    <Fragment slot='content'>Ensure your online presence truly represents you.</Fragment>
+    <Fragment slot="content">Ensure your online presence truly represents you.</Fragment>
 
-    <Fragment slot='bg'>
-      <div class='absolute inset-0 bg-blue-50 dark:bg-transparent'></div>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
@@ -212,17 +191,17 @@ const metadata = {
       alt: 'Astronauts Image',
     }}
   >
-    <Fragment slot='content'>Designed to foster growth and success.</Fragment>
+    <Fragment slot="content">Designed to foster growth and success.</Fragment>
 
-    <Fragment slot='bg'>
-      <div class='absolute inset-0 bg-blue-50 dark:bg-transparent'></div>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Content>
 
   <!-- Steps Widget ****************** -->
 
   <Steps
-    title='Get your dream website up and running in no time with AstroWind.'
+    title="Get your dream website up and running in no time with AstroWind."
     items={[
       {
         title: 'Step 1: <span class="font-medium">Download</span>',
@@ -256,9 +235,9 @@ const metadata = {
   <!-- Features2 Widget ************** -->
 
   <Features2
-    title='Most used widgets'
-    subtitle='Provides frequently used components for building websites using Tailwind CSS'
-    tagline='Components'
+    title="Most used widgets"
+    subtitle="Provides frequently used components for building websites using Tailwind CSS"
+    tagline="Components"
     items={[
       {
         title: 'Headers',
@@ -312,72 +291,80 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot='bg'>
-      <div class='absolute inset-0 bg-blue-50 dark:bg-transparent'></div>
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
   </Features2>
 
   <!-- HighlightedPosts Widget ******* -->
 
   <BlogLatestPosts
-    title='Find out more content in our Blog'
+    title="Find out more content in our Blog"
     information={`The blog is used to display AstroWind documentation.
                         Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
                         Astro is a very interesting technology. Thanks.
                 `}
   />
 
+  <Content
+    isReversed
+    tagline="สถานที่จัดการแข่งขัน"
+    title="Blu-O Rhythm & Bowl สาขา เมเจอร์ ซีนีเพล็กซ์ ปิ่นเกล้า"
+  >
+    <Fragment slot="content">
+      <center>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3572.272325568263!2d100.4776851!3d13.7784351!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29986c174bce7%3A0x4e476fda3827606b!2zQmx1LU8gUmh5dGhtICYgQm93bCDguKrguLLguILguLIg4LmA4Lih4LmA4LiI4Lit4Lij4LmMIOC4i-C4teC4meC4teC5gOC4nuC4peC5h-C4geC4i-C5jCDguJvguLTguYjguJnguYDguIHguKXguYnguLI!5e1!3m2!1sth!2sth!4v1754821233654!5m2!1sth!2sth" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </center>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+
+
   <!-- FAQs Widget ******************* -->
 
   <FAQs
-    title='Frequently Asked Questions'
-    subtitle='Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey.'
-    tagline='FAQs'
+    title="คำถามที่พบบ่อย"
+    subtitle="💬 มีข้อสงสัยเกี่ยวกับการแข่งขัน? เรารวมคำตอบไว้ให้ที่นี่ ครบ จบ ในที่เดียว ก่อนคุณจะกดลงทะเบียน!"
+    tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why AstroWind?',
+        title: 'สามารถสมัครแข่งได้กี่คนต่อทีม?',
         description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
+          "ทีมละ 3 คน",
       },
       {
-        title: 'What do I need to start?',
+        title: 'ถ้าไม่มีทีม สามารถสมัครเดี่ยวได้หรือไม่?',
         description:
-          'Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds. Many say exploration is part of our destiny, but it’s actually our duty to future generations.',
+          'ได้ โดยผู้จัดจะช่วยจัดรวมทีมให้ครบ 3 คนก่อนการแข่งขัน',
       },
       {
-        title: 'How to install the Astro + Tailwind CSS template?',
+        title: ' การแข่งขันใช้กติกาแบบไหน?',
         description:
-          "Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.",
+          "แข่งขันประเภททีม ทีมละ 3 คน คนละ 3 เกมส์ ไม่มีแต้มต่อ ใช้คะแนนรวมตัดสินตามกติกาที่ประกาศ",
       },
       {
-        title: "What's something that you don't understand?",
+        title: "มีรอบการแข่งขันให้เลือกกี่รอบ?",
         description:
-          "A flower in my garden, a mystery in my panties. Heart attack never stopped old Big Bear. I didn't even know we were calling him Big Bear.",
+          "มี 2 รอบให้เลือกรอบที่ 1 เริ่ม 10:00 น. VIP 4 เลน ปกติ 16 เลน รอบที่ 2 เริ่ม 11:30 น. VIP 4 เลน ปกติ 16 เลน"
       },
       {
-        title: 'What is something that you would like to try again?',
+        title: 'ค่าสมัครเท่าไหร่ และชำระอย่างไร?',
         description:
-          "A business big enough that it could be listed on the NASDAQ goes belly up. Disappears! It ceases to exist without me. No, you clearly don't know who you're talking to, so let me clue you in.",
+          "รายละเอียดค่าสมัครและช่องทางชำระเงิน จะแจ้งในหน้าลงทะเบียนและเอกสารยืนยันการสมัคร",
       },
       {
-        title: 'If you could only ask one question to each person you meet, what would that question be?',
+        title: 'ติดต่อสอบถามเพิ่มเติมได้ที่ไหน?',
         description:
-          "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
+          "คุณกฤต ศิริบวรเกียรติ (นึก) โทร 081-351-0918 หรืออีเมล bna90years@gmail.com",
       },
     ]}
   />
 
-  <!-- Stats Widget ****************** -->
 
-  <Stats
-    stats={[
-      { title: 'Downloads', amount: '132K' },
-      { title: 'Stars', amount: '24.8K' },
-      { title: 'Forks', amount: '10.3K' },
-      { title: 'Users', amount: '48.4K' },
-    ]}
-  />
 
   <!-- CallToAction Widget *********** -->
 
@@ -392,12 +379,12 @@ const metadata = {
       },
     ]}
   >
-    <Fragment slot='title'>
-      Astro&nbsp;+&nbsp;<br class='block sm:hidden' /><span class='sm:whitespace-nowrap'>Tailwind CSS</span>
+    <Fragment slot="title">
+      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
     </Fragment>
 
-    <Fragment slot='subtitle'>
-      Be very surprised by these huge fake numbers you are seeing on this page. <br class='hidden md:inline' />Don't
+    <Fragment slot="subtitle">
+      Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
       waste more time! :P
     </Fragment>
   </CallToAction>
