@@ -6,87 +6,39 @@ export const headerData = {
       text: 'หน้าแรก',
       links: [
         {
-          text: 'SaaS',
+          text: 'เกี่ยวกับการแข่งขัน',
           href: getPermalink('/homes/saas'),
         },
         {
-          text: 'Startup',
+          text: 'รอบการแข่งขัน',
           href: getPermalink('/homes/startup'),
         },
         {
-          text: 'Mobile App',
+          text: 'สถานที่จัดการแข่งขัน',
           href: getPermalink('/homes/mobile-app'),
         },
-        {
-          text: 'Personal',
-          href: getPermalink('/homes/personal'),
-        },
       ],
     },
     {
-      text: 'รูปแบบหน้า',
+      text: 'ลงทะเบียนแข่งขัน',
       links: [
         {
-          text: 'Features (Anchor Link)',
+          text: 'เช็กสถานะการลงทะเบียน',
           href: getPermalink('/#features'),
         },
-        {
-          text: 'Services',
-          href: getPermalink('/services'),
-        },
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'About us',
-          href: getPermalink('/about'),
-        },
-        {
-          text: 'Contact',
-          href: getPermalink('/contact'),
-        },
-        {
-          text: 'Terms',
-          href: getPermalink('/terms'),
-        },
-        {
-          text: 'Privacy policy',
-          href: getPermalink('/privacy'),
-        },
       ],
     },
     {
-      text: 'แลนดิ้งเพจ',
+      text: 'สนับสนุนการแข่งขัน',
       links: [
         {
-          text: 'Lead Generation',
+          text: 'เช็กสถานะการสนับสนุน',
           href: getPermalink('/landing/lead-generation'),
-        },
-        {
-          text: 'Long-form Sales',
-          href: getPermalink('/landing/sales'),
-        },
-        {
-          text: 'Click-Through',
-          href: getPermalink('/landing/click-through'),
-        },
-        {
-          text: 'Product Details (or Services)',
-          href: getPermalink('/landing/product'),
-        },
-        {
-          text: 'Coming Soon or Pre-Launch',
-          href: getPermalink('/landing/pre-launch'),
-        },
-        {
-          text: 'Subscription',
-          href: getPermalink('/landing/subscription'),
         },
       ],
     },
     {
-      text: 'บทความ',
+      text: 'ติดต่อเรา',
       links: [
         {
           text: 'Blog List',
@@ -111,7 +63,7 @@ export const headerData = {
       ],
     },
   ],
-  actions: [{ text: 'Download', href: 'https://github.com/ThaiUI/astrowind', target: '_blank' }],
+  actions: [{ text: 'ไปที่ระบบ BEMS', href: 'https://mis.bn-alumni.org/bems', target: '_blank' }],
 };
 
 export const footerData = {
@@ -166,14 +118,10 @@ export const footerData = {
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/ThaiUI/astrowind' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=100063673533771' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://www.facebook.com/profile.php?id=100064718254766' },
   ],
   footNote: `
-    <img class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm" src="https://onwidget.com/favicon/favicon-32x32.png" alt="onWidget logo" loading="lazy"></img>
-    Made by <a class="text-blue-600 underline dark:text-muted" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+   2025 &copy Teerachanon <a class="text-blue-600 underline dark:text-muted" href="https://www.facebook.com/profile.php?id=100064718254766"> Bowonniwet Society</a> · All rights reserved.
   `,
 };
